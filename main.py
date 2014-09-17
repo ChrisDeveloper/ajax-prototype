@@ -5,8 +5,6 @@ import os
 import json
 import re
 
-import logging
-
 
 class Handler(webapp2.RequestHandler):
     def render(self, template):
@@ -30,7 +28,6 @@ class AjaxHandler(Handler):
 
     def post(self):
         data = json.loads(self.request.body)
-        logging.error(data)
         username = data["name"]
 
         if not re.match(r"^[a-zA-Z0-9_-]{3,20}$", username):
