@@ -36,7 +36,7 @@ If you want to run the app locally and play with the code, you need both [Python
 - The `self.request.body` argument of `json.loads` is the only less common piece of Google App Engine that is used in the process, as it is specific to the task. As its name suggests, it gets the body from the Ajax request, which is the JSON object that `json.loads` takes as argument.
 - On the client-side, the jQuery `.done()`  method will eventually handle the response that it gets from the server.
 
-It is supposed that you know the basics of the Google App Engine/Python stack, such as [Jinja2](http://jinja.pocoo.org/) templating engine or the get/post methods of the `webapp2.RequestHandler` object, although this not necessary to grasp what's going on. If you're familiar with other Python web frameworks, that shouldn't affect your understanding. Notice that the webapp2 web framework can be used outside of Google App Engine.
+It is supposed that you know the basics of the Google App Engine/Python stack, such as [Jinja2](http://jinja.pocoo.org/) templating engine or the get/post methods of the `webapp2.RequestHandler` object, although this is not necessary to grasp what's going on. If you're familiar with other Python web frameworks, that shouldn't affect your understanding. Notice that the webapp2 web framework can be used outside of Google App Engine.
 
 ## Further info ##
 [This Stack Overflow answer](http://stackoverflow.com/a/22053890/3190077) is a good source of inspiration. It uses the same set of technologies to "ajaxify" vote ups/downs found on sites such as reddit. However this example is more intricate and involves a lot more code, as database models are needed in this specific case.
