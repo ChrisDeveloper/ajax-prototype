@@ -8,7 +8,7 @@ There is a shortage of online material on how to handle error messages in HTML f
 ## Installation ##
 If you want to run the app locally and play with the code, you need both [Python 2.7](https://www.python.org/download/releases/2.7/) (the app doesn't work with Python 3 or earlier versions of Python 2) as well as the [Google App Engine SDK for Python](https://developers.google.com/appengine/downloads) installed on your machine. If that's already the case, skip step 1 and go straight to step 2.
 
-1. Windows users, just follow the download links and make sure you add Python to your DOS `PATH` (check [this video](http://showmedo.com/videotutorials/video?name=960000&fromSeriesID=96) for instructions). On Mac OS X, the easiest and by far the cleanest way is to use the [Homebrew](http://brew.sh/) package manager
+1. Windows users, just follow the download links and make sure you add Python to your DOS `PATH` (check [this video](http://showmedo.com/videotutorials/video?name=960000&fromSeriesID=96) for instructions). On Mac OS X, the easiest and by far the cleanest way is to use the [Homebrew](http://brew.sh/) package manager (which requires Xcode)
 
         brew install python
         brew install google-app-engine
