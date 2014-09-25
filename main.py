@@ -12,13 +12,13 @@ class Handler(webapp2.RequestHandler):
         self.response.write(t.render())
 
     @property
-    def template_dir(self):
+    def template_directory(self):
         return os.path.join(os.path.dirname(__file__), 'templates')
 
     @property
     def jinja_environment(self):
         return jinja2.Environment(
-            loader=jinja2.FileSystemLoader(self.template_dir),
+            loader=jinja2.FileSystemLoader(self.template_directory),
             autoescape=True)
 
 
